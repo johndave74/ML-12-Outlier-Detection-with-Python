@@ -51,7 +51,49 @@ This notebook blends explanations, examples, and code to guide you step-by-step:
    * Code examples comparing two samples (with/without an outlier)
    * Interpretation of test results
 
----
+
+## What is Outlier?
+
+An outlier is an observation that is numerically distant from the rest of the data or, in a nutshell, is the value that is out of range. Let’s take an example to check what happens to a dataset with a dataset without outliers.
+
+| **Metric**            | **Data without Outliers** | **Data with Outliers** |
+|------------------------|---------------------------|-------------------------|
+| **Data**              | 1, 2, 3, 3, 4, 5, 4      | 1, 2, 3, 3, 4, 5, 400  |
+| **Mean**              | 3.142                     | 59.714                 |
+| **Median**            | 3                         | 3                      |
+| **Standard Deviation**| 1.345185                  | 150.057                |
+
+As you can see, the dataset with outliers has a significantly different mean and standard deviation. In the first scenario, we will say that the average is 3.14. But with the outlier, the average climbs to 59.71. This would completely change the estimate.
+
+Let’s take a concrete example of an outlier. 
+
+In a company of 50 employees, 45 people with a monthly salary of Rs. 6000, 5 seniors with a monthly salary of Rs. 100000 each. If you calculate the average monthly salary of the employees of the company is 14,500 rupees, which will give you a bad conclusion.
+
+But if you take the median salary, it is Rs.6000 which is more sensitive than the average. For this reason, the median is an appropriate measure for the mean. Here you can see the effect of an outlier.
+
+Now let’s have a quick look at the main causes of outliers before getting started with the task of outlier detection:
+
+* Data Entry Errors: Human errors such as errors caused during data collection, recording, or entry can cause outliers in data.
+* Measurement Errors: It is the most common source of outliers. This is caused when the measurement instrument used turns out to be faulty.
+* Natural Outliers: When an outlier is not artificial (due to error), it is a natural outlier. Most real-world data belong to this category.
+* Outlier Detection in Machine Learning using Hypothesis Testing
+
+Now, I will use the Python programming language for the task of outlier detection in machine learning.
+
+An outlier can be of two types: 
+- Univariate and Multivariate.
+-
+Above, we have discussed the example of a univariate outlier. These outliers can be found when we look at the distribution of a single variable. Multivariate outliers are outliers in an n-dimensional space.
+
+**Hypothesis testing** is a common technique for detecting outliers in machine learning. Hypothesis testing is a method of testing a claim or hypothesis about a parameter in a population, using data measured in a sample. In this method, we test a hypothesis by determining the probability that a sample statistic could have been selected, if the hypothesis regarding the population parameter was true.
+
+The purpose of the hypothesis test is to determine the probability that a population parameter, such as the mean, is likely to be true. There are four steps in the hypothesis test:
+- State the assumptions.
+- Define the criteria for a decision.
+- Calculate the test statistic.
+- Make a decision.
+
+Now let’s see how to use the Python programming language to implement the hypothesis testing for the task of Outlier Detection in Machine Learning:
 
 ## 🚶‍♂️ **How to Run This Notebook**
 
