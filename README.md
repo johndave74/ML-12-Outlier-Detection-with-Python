@@ -10,6 +10,7 @@ Have you ever analyzed a dataset only to realize something feels… off? Maybe a
 Those are **outliers**—and they **can distort your data’s truth** if left unchecked.
 
 This notebook was created as an educational walkthrough to:
+
 ✅ Understand **what outliers are** and **why they matter**
 
 ✅ Explore **real-world causes of outliers**
