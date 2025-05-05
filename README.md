@@ -11,8 +11,11 @@ Those are **outliers**—and they **can distort your data’s truth** if left un
 
 This notebook was created as an educational walkthrough to:
 ✅ Understand **what outliers are** and **why they matter**
+
 ✅ Explore **real-world causes of outliers**
+
 ✅ Learn **how they impact statistical measures** like mean and standard deviation
+
 ✅ Implement a **hypothesis testing approach** to detecting outliers using Python
 
 Whether you’re a data science student or a machine learning practitioner, this notebook bridges **theory and practice**—so you not only detect outliers, but also understand the “why” behind the numbers.
